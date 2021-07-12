@@ -1,0 +1,17 @@
+/** @format */
+
+not-found {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100%;
+  white-space: pre-wrap;
+  line-height: 1.5em;
+
+  p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+  }
+}

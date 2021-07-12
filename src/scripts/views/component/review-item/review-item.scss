@@ -1,0 +1,21 @@
+/** @format */
+
+review-item {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: auto 1fr;
+  border-radius: 5px;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+
+  .heading {
+    .name {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .date {
+      font-size: 0.825rem;
+      color: #5e5e5e;
+    }
+  }
+}

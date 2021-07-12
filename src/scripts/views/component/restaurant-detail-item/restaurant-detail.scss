@@ -1,0 +1,76 @@
+/** @format */
+
+// color palette
+$color__primary: #483a36;
+$color__secondary: #fefecc;
+
+restaurant-detail {
+  display: grid;
+  gap: 10px;
+  font-size: 12pt;
+
+  .heading {
+    position: relative;
+    height: 200px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .city {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+      border-radius: 5px;
+      background-color: $color__primary;
+      padding: 5px 10px 5px;
+      color: white;
+      font-weight: 500;
+    }
+  }
+
+  .body {
+    display: grid;
+    gap: 10px;
+
+    .rating {
+      color: $color__primary;
+      padding-bottom: 1rem;
+      padding-top: 0.2em;
+      font-weight: bold;
+    }
+    .address {
+      font-weight: bold;
+    }
+
+    .name {
+      font-size: 14pt;
+    }
+
+    .description {
+      line-height: 1.5em;
+      text-align: justify;
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  restaurant-detail {
+    .heading {
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  restaurant-detail {
+    width: 700px;
+
+    .heading {
+      height: 500px;
+    }
+  }
+}
